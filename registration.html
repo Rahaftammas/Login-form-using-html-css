@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+<div class="wrapper">
+    <form method="" name="signup">
+        <div class="input-field">
+            <input type="text" name="fullname" required>
+            <label>Full Name</label>
+        </div>
+        <div class="input-field">
+            <input type="text" name="mobileno" maxlength="10" required>
+            <label>Mobile Number</label>
+        </div>
+        <div class="input-field">
+            <input type="email" name="emailid" id="emailid" onblur="checkAvailability()" required>
+            <label>Email Address</label>
+            <span id="user-availability-status" style="font-size:12px;"></span>
+        </div>
+        <div class="input-field">
+            <input type="password" name="password" required>
+            <label>Password</label>
+        </div>
+        <div class="input-field">
+            <input type="password" name="confirmpassword" required>
+            <label>Confirm Password</label>
+        </div>
+        <button type="submit" name="signup">Sign Up</button>
+        <div class="register"></div>
+        <p>Already got an account? <a href="login.html">Login Here</a></p>
+    </form>
+</div>
+</body>
+</html>
